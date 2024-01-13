@@ -10,14 +10,19 @@ function createMap() {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    // Add a test marker to verify basic functionality
-    L.marker([36.8, 10.2]).addTo(map).bindPopup("Test Marker");
-
     // Load and add markers to the map based on your CSV data
     d3.csv("cell_towers.csv").then(function(data) {
-        console.log(data); // Log CSV data to the console for inspection
+        data.forEach(function(d) {
+            // Check for the presence of 'country'
+            const country = d.hasOwnProperty('country') ? d.country : null;
+
+            // Add a marker to the map
+            L.marker([+d.Latitude, +d.Longitude]).addTo(map)
+                .bindPopup("Area: " + d.Area + "<br>Cell: " + d.Cell + "<br>Country: " + country);
+        });
     });
 }
 
 // Call the function to create the map when the page is loaded
 createMap();
+
