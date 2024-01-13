@@ -13,8 +13,8 @@ function createMap() {
     // Load and add markers to the map based on your CSV data
     d3.csv("cell_towers.csv").then(function(data) {
         data.forEach(function(d) {
-            // Check for the presence of 'country'
-            const country = d.hasOwnProperty('country') ? d.country : null;
+            // Check if 'country' is not null or undefined before destructuring
+            const country = d && d.country;
 
             // Add a marker to the map
             L.marker([+d.Latitude, +d.Longitude]).addTo(map)
@@ -25,4 +25,3 @@ function createMap() {
 
 // Call the function to create the map when the page is loaded
 createMap();
-
