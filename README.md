@@ -11,9 +11,6 @@ This is a research project under the research unit InnoV'Com Lab - Sup'Com Tunis
 Informations about the interactive layers:
 ## Meaning of MNC values
 
-# MNC Values and Contributors
-# MNC Values and Contributors
-
 | MNC Values | Description                                       | Source ITU                                    |
 |------------|---------------------------------------------------|-------------------------------------------------|
 | 1          | ITU Region 6xx (Africa)                           | [ITU Region 6xx](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_6xx_(Africa)#cite_note-gsa_lte-10)  |
