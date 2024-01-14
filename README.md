@@ -1,7 +1,7 @@
 # Interactive D3.js Map from Folium For Telecommuinication Cell Towers Data - Tunisia
 # Source: https://opencellid.org/
 
-This project demonstrates the conversion of a Folium-generated map to an interactive D3.js map. If you are facing issues with large Folium map file sizes, this approach may help optimize and provide more flexibility using D3.js.
+This is a research project under the research unit InnoV'Com Lab - Sup'Com Tunsiia, that demonstrates the conversion of a Folium-generated map to an interactive D3.js map. If you are facing issues with large Folium map file sizes, this approach may help optimize and provide more flexibility using D3.js.
 
 ## Overview
 
