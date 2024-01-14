@@ -13,9 +13,9 @@ Informations about the interactive layers:
 
 | MNC Values | Description                                       | Source ITU                                    |
 |------------|---------------------------------------------------|-------------------------------------------------|
-| 1          | Orange                                            | [ITU Region 6xx](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_6xx_(Africa)#cite_note-gsa_lte-10)  |
-| 2          | Tunisie Telecom                                   | [ITU Region 6xx](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_6xx_(Africa)#cite_note-gsa_lte-10)  |
-| 3          | Ooredoo                                           | [ITU Region 6xx](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_6xx_(Africa)#cite_note-gsa_lte-10)  |
+| 1          | Orange                                            | [ITU Region 6xx](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_6xx_(Africa)#Tunisia_.E2.80.93_TN)  |
+| 2          | Tunisie Telecom                                   | [ITU Region 6xx](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_6xx_(Africa)#Tunisia_.E2.80.93_TN)  |
+| 3          | Ooredoo                                           | [ITU Region 6xx](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_6xx_(Africa)#Tunisia_.E2.80.93_TN)  |
 | 54         | Unknown                                           | Not applicable                                |
 
 Feel free to contribute, report issues, or suggest improvements!
