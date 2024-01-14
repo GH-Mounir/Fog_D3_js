@@ -9,7 +9,7 @@ function createMap() {
     var markerClusters = {};
 
     // Load and add markers to the map based on your CSV data
-    d3.csv("cell_towers.csv").then(function(data) {
+    d3.csv("https://raw.githubusercontent.com/GH_Mounir/Fog_D3_js/main/cell_towers.csv").then(function(data) {
         data.forEach(function(d) {
             var markerColor = getMarkerColor(+d.MNC);
 
