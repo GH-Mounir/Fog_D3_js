@@ -1,9 +1,8 @@
 function createMap() {
     var map = L.map('map').setView([36.8, 10.2], 10);
 
-    // Change base map style to Stamen Toner
-    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
-        attribution: '© Stamen Design'
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
     // Create an object to store marker clusters based on MNC values
