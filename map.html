@@ -1,69 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>DC.js and D3.js Map</title>
-        <!-- Include D3.js and DC.js -->
-        <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/3.1.8/dc.js"></script>
-    
-        <!-- Include Crossfilter (local file) -->
-        <script src="crossfilter.min.js"></script>
-    
-        <!-- Include Leaflet and Leaflet.markercluster -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-        <!-- Include FontAwesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxdEhGqtZf0Nl6f38eaMH4+8f7ONHT4I7s3v7oFOhG17w0Ypz1nU/0aXNT2DojlnLrO9AJTuqG3D/bWKBSaWZDTfQ==" crossorigin="anonymous" />
-        <!-- Other head elements -->
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-    
-        <!-- Your custom CSS styles for marker shapes -->
-        <style>
-            .leaflet-div-icon {
-                background: transparent;
-                border: none;
-            }
-    
-            .marker-triangle {
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 12px solid;
-            }
-    
-            .marker-square {
-                width: 12px;
-                height: 12px;
-                background-color: #000;
-            }
-    
-            .marker-circle {
-                width: 12px;
-                height: 12px;
-                background-color: #000;
-                border-radius: 50%;
-            }
-    
-            .marker-diamond {
-                width: 0;
-                height: 0;
-                border: 6px solid transparent;
-                border-bottom-color: #000;
-            }
-    
-            .marker-other {
-                width: 12px;
-                height: 12px;
-                background-color: #ccc;
-            }
-        </style>
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <title>DC.js and D3.js Map</title>
+    <!-- Include D3.js and DC.js -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/3.1.8/dc.js"></script>
+
+    <!-- Include Crossfilter (local file) -->
+    <script src="crossfilter.min.js"></script>
+
+    <!-- Include Leaflet and Leaflet.markercluster -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <!-- Other head elements -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+<style>
+    /* Your custom CSS styles for marker shapes */
+.leaflet-div-icon {
+    background: transparent;
+    border: none;
+}
+
+.marker-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #000; /* Set the background color as needed */
+    border-radius: 50%; /* This creates a circle by setting border-radius to 50% */
+}
+
+/* Additional rules for coloring based on MNC */
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.gray {
+    background-color: gray;
+}
+</style>
+</head>
+
 <body>
     <!-- Your map container will go here -->
     <div id="map" style="height: 500px;"></div>
